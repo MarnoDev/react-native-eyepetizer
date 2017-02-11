@@ -4,7 +4,9 @@
 
 ******
 
-**不想看我废话的直接github看代码 ，仓库地址：[react-native-eyepetizer](https://github.com/MarnoDev/react-native-eyepetizer)**
+1. **不想看我废话的直接github看代码 ，仓库地址：[react-native-eyepetizer](https://github.com/MarnoDev/react-native-eyepetizer)**
+
+2. **更多关于React Native知识请关注Marno的简书专题《[React-Native 开发阵营](http://www.jianshu.com/collection/b4ce1d706d1f)》**
 
 ## 一、前言
 > 前段时间写了一篇关于React Native入门的教程[《给所有开发者的React Native详细入门指南（第一阶段）》](http://www.jianshu.com/p/fa0874be0827)，总结了一下我在学习React Native过程中的一些心得，短短几天全网阅读量超过3W+（多个阅读渠道粗略总计），很多人加我微信问我还有没有后续的教程，肯定是有的！而且名字我都想好了，不出意外的应该会叫**《给所有开发者的React Native详细入门指南（第二阶段）》**（额.....），目前基本大纲已经完成了。因为入门还是比较简单的，越往后学可能要掌握的东西就越多。再第二阶段的学习中，我真是没少踩坑，我也都记录了下来，后面的文章中会更新的。
