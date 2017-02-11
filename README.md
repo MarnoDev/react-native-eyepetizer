@@ -29,7 +29,7 @@
 
 |精选|个人中心|
 |:--:|:--:|
-|![](http://upload-images.jianshu.io/upload_images/960283-583c7792d46cc6ab.gif?imageMogr2/auto-orient/strip)|![](http://upload-images.jianshu.io/upload_images/960283-36ece9d8eef26323.gif?imageMogr2/auto-orient/strip)|
+|![](https://github.com/MarnoDev/react-native-eyepetizer/blob/master/screenshot/screenshot0.gif)|![](https://github.com/MarnoDev/react-native-eyepetizer/blob/master/screenshot/screenshot1.gif)|
 
 ## 五、主要技术框架
 **目前用到的**
