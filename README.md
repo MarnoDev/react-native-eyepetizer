@@ -6,6 +6,11 @@
 
 2. **更多关于React Native知识请关注Marno的简书专题《[React-Native 开发阵营](http://www.jianshu.com/collection/b4ce1d706d1f)》**
 
+3. **获取关于React Native技术教程，请搜索微信公众号【aMarno】 ，或者直接扫码关注↓↓↓**
+
+4. **关注公众号，回复RN，就可加入React Native技术交流群，我们一起聊技术。**
+![](http://upload-images.jianshu.io/upload_images/960283-a00b39fd40700acf.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)
+
 ## 一、前言
 > 前段时间写了一篇关于React Native入门的教程[《给所有开发者的React Native详细入门指南（第一阶段）》](http://www.jianshu.com/p/fa0874be0827)，总结了一下我在学习React Native过程中的一些心得，短短几天全网阅读量超过3W+（多个阅读渠道粗略总计），很多人加我微信问我还有没有后续的教程，肯定是有的！而且名字我都想好了，不出意外的应该会叫**《给所有开发者的React Native详细入门指南（第二阶段）》**（额.....），目前基本大纲已经完成了。因为入门还是比较简单的，越往后学可能要掌握的东西就越多。再第二阶段的学习中，我真是没少踩坑，我也都记录了下来，后面的文章中会更新的。
 
@@ -18,9 +23,6 @@
 
 **3.为什么单独编写一个项目，和《第一阶段》文中的demo一样吗？**
 > 教程中的demo揉和了很多学习过程中编写的小的demo，虽然进行的了分包管理，但是看起来还是比较乱。所以单独编写一个工程进行维护，该demo目前仅实现了开眼3.1.2的大约30%的功能（你问我其余的70%呢？我这不是还没学会的嘛）！
-
-**4. 加你好友聊天为什么不回我**
-> 从最开始公布我的个人微信号，我只是觉得搞技术需要多交流，太闭塞了感觉技术进步有局限。但是很多人加了我之后就直接问我问题。实在不好意思，我不是什么客服。技术交流可以，遇到我感兴趣的技术点我会和你一起讨论一下，但是我也有很多不会的东西，我虚心承认，所以也请各位大神不必加了我以后就好像来面试我一样，直接抛一个问题来为难我。
 
 ## 三、前面都是废话，看下面↓↓↓
 
@@ -55,6 +57,6 @@
 -  所用到接口均来自网络，请不要乱用！尊重原创版权
 
 ******
->## 关于我
-> **1.邮箱：**<marnodev@163.com></br>**2.简书：**<http://www.jianshu.com/u/174a09ba6c25></br>**3.掘金：**<https://gold.xitu.io/user/56c1c513c24aa800534e85f3></br>**4.CSDN：**<http://blog.csdn.net/marno__></br>**5.Github：**<https://github.com/MarnoDev></br> **6.微信号：** marno666，交流交友都可以，但千万不要直接抛问题（因为...锅太重，我一人接不住！）。加好友时希望可以备注下真名和技术领域，谢谢！也可以直接扫码↓↓↓</br>
->![](http://upload-images.jianshu.io/upload_images/960283-e0c4fc1db35593f6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1080/q/50)
+- **获取更多关于React Native技术教程，请搜索微信公众号【aMarno】 也可以直接扫码关注↓↓↓**
+- **关注公众号，回复RN，就可加入React Native技术交流群，我们一起聊技术。**
+![](http://upload-images.jianshu.io/upload_images/960283-a00b39fd40700acf.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)
