@@ -22,12 +22,14 @@ class ActionIcon extends Component {
 
 export default class VideoDetailPage extends Component {
     constructor(props) {
+        console.log('time2==> ' + new Date().valueOf() + ' constructor');
         super(props);
         //注意，如果不进行bind，是拿不到传递过来的默认属性的
         this._onBackPress = this._onBackPress.bind(this);
     }
 
     render() {
+        console.log('time2==> ' + new Date().valueOf() + ' render');
         let rowData = this.props.rowData;
         return (
             <View style={{flexDirection: 'column', flex: 1}}>
@@ -81,6 +83,14 @@ export default class VideoDetailPage extends Component {
                 }
             })
         }
+    }
+
+    componentWillMount() {
+        console.log('time2==> ' + new Date().valueOf() + ' componentWillMount');
+    }
+
+    componentDidMount() {
+        console.log('time2==> ' + new Date().valueOf() + ' componentDidMount');
     }
 
     //返回按钮

@@ -9,12 +9,14 @@ import Video from 'react-native-video';
 
 export default class VideoPlayPage extends Component {
     constructor(props) {
+        console.log('time3==> ' + new Date().valueOf() + ' constructor');
         super(props);
         //注意，如果不进行bind，是拿不到传递过来的默认属性的
         this._onBackPress = this._onBackPress.bind(this);
     }
 
     render() {
+        console.log('time3==> ' + new Date().valueOf() + ' render');
         return (
            <View style={{flex:1,backgroundColor:'black'}}>
                <Video source={{uri: this.props.rowData.playUrl}}   // Can be a URL or a local file.
@@ -33,6 +35,14 @@ export default class VideoPlayPage extends Component {
                       style={styles.backgroundVideo}/>
            </View>
         )
+    }
+
+    componentWillMount() {
+        console.log('time3==> ' + new Date().valueOf() + ' componentWillMount');
+    }
+
+    componentDidMount() {
+        console.log('time3==> ' + new Date().valueOf() + ' componentDidMount');
     }
 
     _onBackPress() {

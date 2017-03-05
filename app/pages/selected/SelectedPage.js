@@ -16,6 +16,7 @@ const videoUrl = 'http://baobab.wandoujia.com/api/v1/feed?num=1';
 
 export default class ListViewTest extends Component {
     constructor(props) {
+        console.log('time1==> ' + new Date().valueOf() + ' constructor');
         super(props)
         /**
          * 使用DataSource作为ListView的数据源
@@ -40,6 +41,7 @@ export default class ListViewTest extends Component {
 
     //渲染视图
     render() {
+        console.log('time1==> ' + new Date().valueOf() + ' render');
         return (
             this._renderList()
         )
@@ -155,8 +157,13 @@ export default class ListViewTest extends Component {
 
     //页面渲染完成后会主动回调该方法
     componentDidMount() {
+        console.log('time1==> ' + new Date().valueOf() + ' componentDidMount');
         // ToastUtil.show("组件加载完成，开始网络请求");
         this._fetchVideoList();
+    }
+
+    componentWillMount() {
+        console.log('time1==> ' + new Date().valueOf() + ' componentWillMount');
     }
 }
 
