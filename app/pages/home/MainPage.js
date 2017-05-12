@@ -113,10 +113,12 @@ const MainPageStyle = StyleSheet.create(
         tab_title: {
             color: "#929292",
             fontSize: 8,
+            marginTop:-4,
         },
         tab_title_selected: {
             color: "#333333",
             fontSize: 8,
+            marginTop:-4,
         }
     }
 )

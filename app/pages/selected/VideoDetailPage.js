@@ -7,7 +7,9 @@ import React, {Component} from 'react';
 import {Text, Navigator, StyleSheet, View, Image, TouchableWithoutFeedback} from 'react-native';
 import ToastUtil from '../../utils/ToastUtil';
 import VideoPlayPage from './VideoPlayPage';
+import log from '../../utils/LogUtil';
 
+const TAG = 'time2';
 
 class ActionIcon extends Component {
     render() {
@@ -22,7 +24,7 @@ class ActionIcon extends Component {
 
 export default class VideoDetailPage extends Component {
     constructor(props) {
-        console.log('time2==> ' + new Date().valueOf() + ' constructor');
+        log.i(TAG, 'constructor');
         super(props);
         //注意，如果不进行bind，是拿不到传递过来的默认属性的
         this._onBackPress = this._onBackPress.bind(this);
@@ -86,11 +88,25 @@ export default class VideoDetailPage extends Component {
     }
 
     componentWillMount() {
-        console.log('time2==> ' + new Date().valueOf() + ' componentWillMount');
+        log.i(TAG, 'componentWillMount');
     }
 
     componentDidMount() {
-        console.log('time2==> ' + new Date().valueOf() + ' componentDidMount');
+        log.i(TAG, 'componentDidMount');
+    }
+
+
+    componentWillReceiveProps() {
+        log.i(TAG, 'componentWillReceiveProps')
+    }
+
+
+    componentWillUpdate() {
+        log.i(TAG, 'componentWillUpdate');
+    }
+
+    componentDidUpdate() {
+        log.i(TAG, 'componentDidUpdate');
     }
 
     //返回按钮

@@ -10,13 +10,16 @@ import ToastUtil from "../../utils/ToastUtil";
 import VideoDetailPage from './VideoDetailPage';
 import ParallaxScrollView from 'react-native-parallax-scroll-view';
 import DimensUtil from '../../utils/DimensUtil';
+import log from '../../utils/LogUtil';
+
+const TAG = 'time1';
 
 //视频地址，下一页链接会在json中一起返回
 const videoUrl = 'http://baobab.wandoujia.com/api/v1/feed?num=1';
 
 export default class ListViewTest extends Component {
     constructor(props) {
-        console.log('time1==> ' + new Date().valueOf() + ' constructor');
+        log.i(TAG, 'constructor');
         super(props)
         /**
          * 使用DataSource作为ListView的数据源
@@ -111,21 +114,20 @@ export default class ListViewTest extends Component {
 
     //处理列表item的点击事件
     _onItemClick(rowData, rowId) {
-        //ToastUtil.show("点击了" + rowId);
-        const {navigator} = this.props;
-        if (navigator) {
-            navigator.push({
-                name: 'VideoDetailPage',
-                //这里跳转到VideoDetailPage后，后自动向该页面属性中注入navigator对象
-                //在VideoDetailPage就可以直接通过props获取，其他地方也一样
-                component: VideoDetailPage,
-                params: {
-                    rowData: rowData,
-                    rowId: rowId,
-                }
-            });
-        }
-
+            //ToastUtil.show("点击了" + rowId);
+            const {navigator} = this.props;
+            if (navigator) {
+                navigator.push({
+                    name: 'VideoDetailPage',
+                    //这里跳转到VideoDetailPage后，后自动向该页面属性中注入navigator对象
+                    //在VideoDetailPage就可以直接通过props获取，其他地方也一样
+                    component: VideoDetailPage,
+                    params: {
+                        rowData: rowData,
+                        rowId: rowId,
+                    }
+                });
+            }
     }
 
     //发起网络请求，获取数据
@@ -155,15 +157,29 @@ export default class ListViewTest extends Component {
             })
     }
 
+    componentWillMount() {
+        log.i(TAG, 'componentWillMount');
+    }
+
     //页面渲染完成后会主动回调该方法
     componentDidMount() {
-        console.log('time1==> ' + new Date().valueOf() + ' componentDidMount');
+        log.i(TAG, 'componentDidMount');
         // ToastUtil.show("组件加载完成，开始网络请求");
         this._fetchVideoList();
     }
 
-    componentWillMount() {
-        console.log('time1==> ' + new Date().valueOf() + ' componentWillMount');
+
+    componentWillReceiveProps() {
+        log.i(TAG, 'componentWillReceiveProps')
+    }
+
+
+    componentWillUpdate() {
+        log.i(TAG, 'componentWillUpdate');
+    }
+
+    componentDidUpdate() {
+        log.i(TAG, 'componentDidUpdate');
     }
 }
 

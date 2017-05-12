@@ -6,43 +6,58 @@
 import React, {Component} from 'react';
 import {Text, Navigator, StyleSheet, View} from 'react-native';
 import Video from 'react-native-video';
+import log from '../../utils/LogUtil';
+
+const TAG = 'time3';
 
 export default class VideoPlayPage extends Component {
     constructor(props) {
-        console.log('time3==> ' + new Date().valueOf() + ' constructor');
+        log.i(TAG, 'constructor');
         super(props);
         //注意，如果不进行bind，是拿不到传递过来的默认属性的
         this._onBackPress = this._onBackPress.bind(this);
     }
 
     render() {
-        console.log('time3==> ' + new Date().valueOf() + ' render');
+        log.i(TAG, 'render');
         return (
-           <View style={{flex:1,backgroundColor:'black'}}>
-               <Video source={{uri: this.props.rowData.playUrl}}   // Can be a URL or a local file.
-                      ref={(ref) => {
-                          this.player = ref
-                      }}                             // Store reference
-                      rate={1.0}                     // 0 is paused, 1 is normal.
-                      volume={1.0}                   // 0 is muted, 1 is normal.
-                      muted={false}                  // Mutes the audio entirely.
-                      paused={false}                 // Pauses playback entirely.
-                      resizeMode="contain"             // Fill the whole screen at aspect ratio.
-                      repeat={false}                  // Repeat forever.
-                      playInBackground={false}       // Audio continues to play when app entering background.
-                      playWhenInactive={false}       // [iOS] Video continues to play when control or notification center are shown.
-                      progressUpdateInterval={250.0} // [iOS] Interval to fire onProgress (default to ~250ms)
-                      style={styles.backgroundVideo}/>
-           </View>
+            <View style={{flex: 1, backgroundColor: 'black'}}>
+                <Video source={{uri: this.props.rowData.playUrl}}   // Can be a URL or a local file.
+                       ref={(ref) => {
+                           this.player = ref
+                       }}                             // Store reference
+                       rate={1.0}                     // 0 is paused, 1 is normal.
+                       volume={1.0}                   // 0 is muted, 1 is normal.
+                       muted={false}                  // Mutes the audio entirely.
+                       paused={false}                 // Pauses playback entirely.
+                       resizeMode="contain"             // Fill the whole screen at aspect ratio.
+                       repeat={false}                  // Repeat forever.
+                       playInBackground={false}       // Audio continues to play when app entering background.
+                       playWhenInactive={false}       // [iOS] Video continues to play when control or notification center are shown.
+                       progressUpdateInterval={250.0} // [iOS] Interval to fire onProgress (default to ~250ms)
+                       style={styles.backgroundVideo}/>
+            </View>
         )
     }
 
     componentWillMount() {
-        console.log('time3==> ' + new Date().valueOf() + ' componentWillMount');
+        log.i(TAG, 'componentWillMount');
     }
 
     componentDidMount() {
-        console.log('time3==> ' + new Date().valueOf() + ' componentDidMount');
+        log.i(TAG, 'componentDidMount');
+    }
+
+    componentWillReceiveProps() {
+        log.i(TAG, 'componentWillReceiveProps')
+    }
+
+    componentWillUpdate() {
+        log.i(TAG, 'componentWillUpdate');
+    }
+
+    componentDidUpdate() {
+        log.i(TAG, 'componentDidUpdate');
     }
 
     _onBackPress() {
